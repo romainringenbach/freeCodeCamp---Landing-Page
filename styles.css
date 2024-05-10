@@ -25,3 +25,17 @@ overflow-wrap: break-word;
 #root, #__next {
 isolation: isolate;
 } 
+
+/* Minimal */
+
+#nav-bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+@media (max-width: 500px){
+    #nav-bar {
+        flex-direction: column;
+    }
+}
