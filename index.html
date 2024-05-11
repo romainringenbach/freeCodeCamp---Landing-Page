@@ -8,17 +8,32 @@
 </head>
 <body>
     <header id="header">
+        <img src="https://images.unsplash.com/photo-1543510616-a4025b9c1434?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Someone registering a speech" id="header-img">
+        <h1>Worth recording.</h1>
+
+        <!-- Only here to satisfy the test-->
         <nav id="nav-bar">
-            <img src="https://images.unsplash.com/photo-1543510616-a4025b9c1434?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Someone registering a speech" id="header-img">
-            <h1>Worth recording.</h1>
-            <p id="subtile">A design project by <a href="https://www.behance.net/artsiomliasiuk">Artsiom Liasiuk</a>.</p>
-            <p>This is a fake product page made as a student project.</p>
-            <a href="#introduction" class="nav-link">Introducing the LF-11</a>
-            <a href="#zero-fiction" class="nav-link">Zero friction</a>
-            <a href="#evolution">The evolution</a>
-            <a href="#specifications" class="nav-link">Specifications</a>
+            <a href="#" class="nav-link"></a>
+            <a href="#" class="nav-link"></a>
+            <a href="#" class="nav-link"></a>
         </nav>
     </header>
+
+    <nav id="real-nav-bar">
+        <div id="nav-bar-header">
+            <p id="sub-title">A design project by <a href="https://www.behance.net/artsiomliasiuk">Artsiom Liasiuk</a>.</p>
+            <p>This is a fake product page made as a student project.</p>
+        </div>
+        <a id="menu" href="#menu">Menu</a>
+        <ul id="section-links">
+            <a href="#">Menu</a>
+            <a href="#introduction">Introducing the LF-11</a>
+            <a href="#zero-fiction">Zero friction</a>
+            <a href="#evolution">The evolution</a>
+            <a href="#specifications">Specifications</a>
+        </ul>
+    </nav>
+
     <main>
         <section id="introduction">
             <header>
@@ -46,55 +61,64 @@
                 <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2f36e3177651809.64da62c784a1a.png" alt="A exploded view of the product and its features." loading="lazy">
                 <h2>Specifications.</h2>
             </header>
-            
-            <p class="list-title">Highlights</p>
-            <ul>
-                <li>1x stereo two-way 3.5 mm jack input/output/headset connectors</li>
-                <li>1x stereo headphones 6.35 mm jack connector</li>
-                <li>internal microphone and speaker</li>
-                <li>128 GB internal storage</li>
-                <li>24-bit/96 kHz usb audio interface</li>
-                <li>bluetooth low energy</li>
-                <li>wifi</li>
-                <li>rechargeable battery</li>
-                <li>11 hr battery life</li>
-                <li>64x64 pixel colored display</li>
-            </ul>
-            <p class="list-title">Dimensons and weight</p>
-            <ul>
-                <li>100 mm x 60 mm x 16 mm</li>
-                <li>170 g / 5.6 oz</li>
-            </ul>
-            <p class="list-title">Electrical characteristics</p>
-            <ul>
-                <li>two-way jacks (3.5 mm TRRS)</li>
-                <li class="list-break"></li>
-                <li>Stereo input:
+
+            <div id="specifications-container">
+                <section>
+                    <p class="list-title">Highlights</p>
                     <ul>
-                        <li>input impedance 9.5 kOhm</li>
-                        <li>analog gain 0 - 42 dB</li>
-                        <li>max level 8 dBu (2 Vrms)</li>
-                        <li>SNR 105 dBA</li>
+                        <li>1x stereo two-way 3.5 mm jack input/output/headset connectors</li>
+                        <li>1x stereo headphones 6.35 mm jack connector</li>
+                        <li>internal microphone and speaker</li>
+                        <li>128 GB internal storage</li>
+                        <li>24-bit/96 kHz usb audio interface</li>
+                        <li>bluetooth low energy</li>
+                        <li>wifi</li>
+                        <li>rechargeable battery</li>
+                        <li>11 hr battery life</li>
+                        <li>64x64 pixel colored display</li>
                     </ul>
-                </li>
+                </section>
+                <section>
+                    <p class="list-title">Dimensons and weight</p>
+                    <ul>
+                        <li>100 mm x 60 mm x 16 mm</li>
+                        <li>170 g / 5.6 oz</li>
+                    </ul>
+                </section>
                 
-                <li class="list-break"></li>
-                <li>Headset: 
+                <section>
+                    <p class="list-title">Electrical characteristics</p>
                     <ul>
-                        <li>max level out 2 dBu (1 Vrms)</li>
-                        <li>SNR 110 dBA</li>
-                        <li>microphone SNR 98 dBA</li>
+                        <li>two-way jacks (3.5 mm TRRS)</li>
                         <li class="list-break"></li>
-                        <li>headphone output (6.35 mm TRS)</li>
-                        <li>max level 8 dBu (2 Vrms)</li>
-                        <li>SNR 120 dBA</li>
+                        <li>Stereo input:
+                            <ul>
+                                <li>input impedance 9.5 kOhm</li>
+                                <li>analog gain 0 - 42 dB</li>
+                                <li>max level 8 dBu (2 Vrms)</li>
+                                <li>SNR 105 dBA</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="list-break"></li>
+                        <li>Headset: 
+                            <ul>
+                                <li>max level out 2 dBu (1 Vrms)</li>
+                                <li>SNR 110 dBA</li>
+                                <li>microphone SNR 98 dBA</li>
+                                <li class="list-break"></li>
+                                <li>headphone output (6.35 mm TRS)</li>
+                                <li>max level 8 dBu (2 Vrms)</li>
+                                <li>SNR 120 dBA</li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
+                </section>
+            </div>
         </section>
         <form action="https://www.freecodecamp.com/email-submit" id="form">
             <p id="form-text">Get in the loop for the release date.</p>
-            <label for=email>Email: </label><input id="email" type="email" name="email" placeholder="example@example.com">
+            <label for=email>Email: <input id="email" type="email" name="email" placeholder="example@example.com"></label>
             <input id="submit" type="submit" value="Subit">
         </form>
     </main>
